@@ -55,6 +55,7 @@ body{
     font-style:normal;
     background:var(--background-color);
     color:var(--primary-color);
+    padding-top:110px;
 }
 
 
@@ -64,6 +65,12 @@ body{
     background:var(--white-color);
     padding-top:2rem;
     padding-bottom:2rem;
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
 }
 
 .logo{
