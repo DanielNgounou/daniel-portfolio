@@ -46,6 +46,10 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 
 /* BODY */
 
@@ -55,6 +59,12 @@ body{
     font-style:normal;
     background:var(--background-color);
     color:var(--primary-color);
+}
+
+/* SECTIONS */
+
+section{
+    scroll-margin-top:2em;
 }
 
 
@@ -400,6 +410,94 @@ body{
 }
 
 
+/* ABOUT SECTION */
+
+.about-section{
+    padding:8em 0;
+}
+
+.about-heading h2{
+    font-family:var(--heading-font);
+    font-size:3rem;
+    color:var(--primary-color);
+}
+
+.about-heading h2 span{
+    font-weight:var(--bold-weight);
+}
+
+.about-heading p{
+    margin-top:12px;
+    font-size:1.1rem;
+}
+
+.about-box{
+    margin-top:3em;
+
+    background:var(--soft-gray);
+
+    padding:3em;
+
+    border-radius:var(--large-radius);
+
+    max-width:990px;
+}
+
+.about-box p{
+    font-size:1.45rem;
+    line-height:1.4;
+
+    margin-bottom:2rem;
+}
+
+.about-box p:last-child{
+    margin-bottom:0;
+}
+
+.about-links{
+    display:flex;
+    gap:40px;
+
+    margin-top:2.5em;
+
+    flex-wrap:wrap;
+}
+
+.about-links a{
+    color:var(--primary-color);
+
+    font-size:1.3rem;
+    font-weight:700;
+
+    text-decoration:underline;
+
+    transition:opacity 0.3s ease;
+}
+
+.about-links a:hover{
+    opacity:0.6;
+}
+
+.about-links span{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    background:var(--primary-color);
+
+    color:var(--white-color);
+
+    width:24px;
+    height:24px;
+
+    border-radius:50%;
+
+    font-size:0.8rem;
+
+    margin-left:6px;
+}
+
 
 /* RESPONSIVE */
 
@@ -538,5 +636,38 @@ body{
 
     .work-overlay p{
         font-size:0.9rem;
+    }
+}
+
+
+/* Responsive adjustments for the about section */
+
+@media(max-width:576px){
+
+    .about-heading h2{
+        font-size:2.3rem;
+    }
+
+    .about-heading p{
+        font-size:1rem;
+    }
+
+    .about-box{
+        padding:2em;
+        border-radius:28px;
+    }
+
+    .about-box p{
+        font-size:1.1rem;
+        line-height:1.5;
+    }
+
+    .about-links{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .about-links a{
+        font-size:1.1rem;
     }
 }
