@@ -39,7 +39,7 @@
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="#process">WRITING</a>
+                <a class="nav-link" href="#process">MY PROCESS</a>
                 </li>
 
                 <li class="nav-item">
@@ -56,7 +56,7 @@
             </div>
 
             <!-- Right CTA -->
-            <a href="#" class="connect-link">
+            <a href="mailto:danielngounoungounou@gmail.com" class="connect-link">
             LET’S link →
             </a>
 
@@ -260,15 +260,15 @@
 
             <div class="about-links">
 
-                <a href="#">
+                <a href="https://danielngounoungounou.com/">
                     my work portfolio <span>↗</span>
                 </a>
 
-                <a href="#">
+                <a href="https://www.linkedin.com/in/daniel-ngounou/">
                     Linked In <span>↗</span>
                 </a>
 
-                <a href="#">
+                <a href="https://drive.google.com/file/d/1ej8Tsp4y7uqf1tLBqFKlCUb7RsmV9iGU/view?usp=sharing">
                     My Resume <span>↗</span>
                 </a>
 
@@ -278,5 +278,44 @@
 
     </section>
 
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        ↑
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+
+        <div class="footer-links">
+            <a href="#home">HOME</a>
+            <a href="#process">MY PROCESS</a>
+            <a href="#work">WORK</a>
+            <a href="#about">ABOUT</a>
+            
+        </div>
+
+        <p>Created with love</p>
+
+    </footer>
+
 </body>
+
+<script>
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 200){
+        backToTop.classList.add("show");
+    }
+
+    else{
+        backToTop.classList.remove("show");
+    }
+
+});
+
+</script>
 </html>
