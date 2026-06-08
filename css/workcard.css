@@ -1,0 +1,298 @@
+.project-detail-section{
+    display:none;
+    padding:8em 0;
+}
+
+.project-detail-section.show{
+    display:block;
+}
+
+.project-detail-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+}
+
+.project-detail-text{
+    flex:1;
+}
+
+.project-detail-text h2{
+    font-family:var(--heading-font);
+    font-size:3rem;
+}
+
+.project-detail-text h2 span{
+    font-weight:var(--bold-weight);
+}
+
+.project-detail-text p{
+    font-size:1.1rem;
+    max-width:600px;
+    margin:1.5em 0;
+}
+
+.project-detail-text h4{
+    font-weight:800;
+    margin-bottom:1em;
+}
+
+.project-detail-text li{
+    margin-bottom:0.7em;
+}
+
+.project-detail-image{
+    width:420px;
+}
+
+.project-detail-image img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:var(--medium-radius);
+}
+
+
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    :root {
+        --page-padding: 50px;
+        --gap-hero: 50px;
+        --gap-stats: 90px;
+    }
+
+    .navbar {
+        padding: 0 var(--page-padding);
+    }
+
+    .hero {
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .services-grid {
+        flex-wrap: wrap;
+    }
+
+    .service-card,
+    .service-card.active {
+        width: 260px;
+    }
+
+    .team-grid,
+    .testimonial-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .prepare-content {
+        gap: 60px;
+    }
+
+    .footer-content,
+    .footer-info {
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    :root {
+        --page-padding: 24px;
+        --navbar-height: 90px;
+        --logo-width: 130px;
+    }
+
+    body {
+        padding-top: var(--navbar-height);
+    }
+
+    .navbar {
+        height: var(--navbar-height);
+        padding: 0 var(--page-padding);
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .phone-box {
+        padding: 9px 14px;
+        font-size: 0.8rem;
+    }
+
+    .phone-box span {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px var(--page-padding);
+        gap: 35px;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero p {
+        margin-inline: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .stats-decoration {
+        display: none;
+    }
+
+    .testimonial-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .services-grid {
+        flex-direction: column;
+    }
+
+    .service-card,
+    .service-card.active {
+        width: 100%;
+        max-width: 330px;
+        height: 240px;
+    }
+
+    .service-description {
+        width: 55%;
+        right: 18px;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prepare-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .progress-bar,
+    .booking-box {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .appointment-types {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .type-card {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .date-row {
+        gap: 8px;
+    }
+
+    .dates-container {
+        overflow-x: auto;
+        max-width: 280px;
+        padding-bottom: 8px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content,
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-item {
+        justify-content: center;
+    }
+
+    .floating-actions {
+        bottom: 35px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .hero h1,
+    .section-header h2,
+    .testimonials h2 {
+        font-size: 1.65rem;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .stat-card h2 {
+        font-size: 2.8rem;
+    }
+
+    .service-description {
+        width: 60%;
+        height: 150px;
+        padding: 14px;
+    }
+
+    .service-description p {
+        font-size: 0.78rem;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+
+    .step p {
+        font-size: 0.75rem;
+    }
+
+    .floating-appointment {
+        font-size: 0.8rem;
+        padding: 10px 18px;
+    }
+}

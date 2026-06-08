@@ -1,13 +1,7 @@
-const backToTop = document.getElementById("backToTop");
+const serviceCards = document.querySelectorAll(".service-card");
 
-window.addEventListener("scroll", () => {
-
-    if(window.scrollY > 200){
-        backToTop.classList.add("show");
-    }
-
-    else{
-        backToTop.classList.remove("show");
-    }
-
+serviceCards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("active");
+    });
 });
